@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mockup aAgenzia Viaggi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          >Navbar
+          <img
+            src="data:image/png;base64,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"
+            alt="Logo"
+            class="me-2"
+            style="height: 80px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Saldi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Welcome Summer
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Welcome Summer</a></li>
+                <li><a class="dropdown-item" href="#">last Minute</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">recensioni</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <h1 class="text-center pd-3">Andres & Holiday</h1>
+    <h2>Queste sono le nostre offerte Last minute</h2>
+    <p class="lead">Non perdere l'occasione, approfitta subito!</p>
+    <a href="#" class="btn btn-info btn-lg mt-3">La tua offerta</a>
+  </header>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card">
+            <img
+              src="./images.jpg"
+              class="card-img-top img-fluid"
+              alt="Immagine"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Caraibi</h5>
+              <p class="card-text">
+                una settimana all inclusive e camera vista sul mare
+              </p>
+              <a href="#" class="btn btn-info">Scopri</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-3">
+          <div class="card">
+            <img
+              src="./images.jpg"
+              class="card-img-top img-fluid"
+              alt="Prodotto 2"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Spiaggia di sabbia bianca</h5>
+              <p class="card-text">un'emozione unica.</p>
+              <a href="#" class="btn btn-info">Scopri</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-3">
+          <div class="card">
+            <img
+              src="./images.jpg"
+              class="card-img-top img-fluid"
+              alt="Prodotto 3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Ottima Struttura</h5>
+              <p class="card-text">hotel 5 stelle</p>
+              <a href="#" class="btn btn-info">Scopri</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-3">
+          <div class="card">
+            <img
+              src="images.jpg"
+              class="card-img-top img-fluid"
+              alt="Prodotto 4"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Ristorante</h5>
+              <p class="card-text">Ottima cucina locale ed estera</p>
+              <a href="#" class="btn btn-info">Scopri</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Prima riga di card -->
+        <div class=" col-md-6 ">
+          <div class="card">
+            <img
+              src="images.jpg"
+              class="card-img-top img-fluid"
+              alt="Prodotto 1"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Prodotto 1</h5>
+              <p class="card-text">Descrizione breve.</p>
+              <a href="#" class="btn btn-primary">Scopri</a>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-md-6">
+          <div class="card">
+            <img
+              src="images.jpg"
+              class="card-img-top img-fluid"
+              alt="Prodotto 2"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Prodotto 2</h5>
+              <p class="card-text">Descrizione breve.</p>
+              <a href="#" class="btn btn-primary">Scopri</a>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-md-6 ">
+          <div class="card">
+            <img
+              src="images.jpg"
+              class="card-img-top img-fluid"
+              alt="Prodotto 3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Prodotto 3</h5>
+              <p class="card-text">Descrizione breve.</p>
+              <a href="#" class="btn btn-primary">Scopri</a>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-md-6 ">
+          <div class="card">
+            <img
+              src="images.jpg"
+              class="card-img-top img-fluid"
+              alt="Prodotto 4"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Prodotto 4</h5>
+              <p class="card-text">Descrizione breve.</p>
+              <a href="#" class="btn btn-primary">Scopri</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seconda riga di card (solo per Tablet e Desktop) -->
+        <div class="col-md-6 ">
+          <div class="card">
+            <img
+              src="images.jpg"
+              class="card-img-top img-fluid"
+              alt="Prodotto 5"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Prodotto 5</h5>
+              <p class="card-text">Descrizione breve.</p>
+              <a href="#" class="btn btn-primary">Scopri</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 ">
+          <div class="card">
+            <img
+              src="images.jpg"
+              class="card-img-top img-fluid"
+              alt="Prodotto 6"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Prodotto 6</h5>
+              <p class="card-text">Descrizione breve.</p>
+              <a href="#" class="btn btn-primary">Scopri</a>
+            </div>
+          </div>
+        </div>
+        <div class="col- sm-4 ">
+            <div class="card">
+              <img
+                src="images.jpg"
+                class="card-img-top img-fluid"
+                alt="Prodotto 6"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Prodotto 6</h5>
+                <p class="card-text">Descrizione breve.</p>
+                <a href="#" class="btn btn-primary">Scopri</a>
+        </div>
+        </div>
+        </div>
+      
+  </body>
+</html>
